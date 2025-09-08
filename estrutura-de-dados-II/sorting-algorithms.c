@@ -162,7 +162,7 @@ int* copiarVetor(int* vOriginal, int n) {
 }
 
 void tempoGasto(clock_t inicio, clock_t fim) {
-    double tempo = ((double)(fim - inicio)) / CLOCKS_PER_SEC;
+    double tempo = ((double)(fim - inicio)) * 1000 / CLOCKS_PER_SEC;
     printf("%.5f segundos", tempo);
 }
 
